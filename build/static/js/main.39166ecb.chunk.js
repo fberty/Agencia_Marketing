@@ -1,0 +1,2 @@
+(this.webpackJsonpagencia_marketing=this.webpackJsonpagencia_marketing||[]).push([[0],{12:function(e,n,t){},14:function(e,n,t){"use strict";t.r(n);var a=t(1),c=t.n(a),r=t(3),i=t.n(r),o=(t(12),t(0));var s=function(){return Object(o.jsx)("div",{className:"text-gray-500 underline",children:"Hola mundo"})};i.a.createRoot(document.getElementById("root")).render(Object(o.jsx)(c.a.StrictMode,{children:Object(o.jsx)(s,{})}))}},[[14,1,2]]]);
+//# sourceMappingURL=main.39166ecb.chunk.js.map
