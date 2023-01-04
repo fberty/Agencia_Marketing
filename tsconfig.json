@@ -23,5 +23,5 @@
     },
     "include": [
       "src"
-    ]
+, "talwind_components"    ]
 }
