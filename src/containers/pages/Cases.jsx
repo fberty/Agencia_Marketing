@@ -3,18 +3,22 @@ import Header from "components/cases/Header"
 import Footer from "components/navigation/Footer"
 import Navbar from "components/navigation/Navbar"
 import Layout from "hocs/layouts/Layout"
+import { useEffect } from "react"
 
-function cases() {
+function Cases() {
+    useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
     return (
         <Layout>
-            <Navbar />
+            <Navbar/>
             <div className="pt-28">
-            <Header />
-            <CasesList />
+                <Header/>
+                <CasesList/>
             </div>
-            <Footer />
+            <Footer/>
         </Layout>
     )
 }
 
-export default cases
+export default Cases

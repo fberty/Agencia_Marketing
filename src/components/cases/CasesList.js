@@ -1,10 +1,11 @@
 import CaseCard from "./CaseCard"
+import Carousel from "@itseasy21/react-elastic-carousel";
 
 function CasesList() {
 
   const posts = [
     {
-      id:"1234-qwer",
+      id: "1234-qwer",
       title: 'Boost your conversion rate',
       href: '#',
       category: { name: 'Article', href: '#' },
@@ -23,7 +24,7 @@ function CasesList() {
       },
     },
     {
-      id:"1234-asdf",
+      id: "1234-asdf",
       title: 'How to use search engine optimization to drive sales',
       href: '#',
       category: { name: 'Video', href: '#' },
@@ -42,7 +43,7 @@ function CasesList() {
       },
     },
     {
-      id:"4321-zxcv",
+      id: "4321-zxcv",
       title: 'Improve your customer experience',
       href: '#',
       category: { name: 'Case Study', href: '#' },
@@ -62,6 +63,14 @@ function CasesList() {
     },
   ]
 
+  const breakPoints = [
+    { width: 1, itemsToShow: 1, itemsToScroll: 1 },
+    { width: 1280, itemsToShow: 2, itemToScroll: 2 },
+    { width: 1750, itemsToShow: 3, itemsToScroll: 2 },
+    // { width: 1450, itemsToShow: 5 },
+    // { width: 1750, itemsToShow: 6 },
+  ]
+
   return (
     <div className="relative px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28">
       <div className="absolute inset-0">
@@ -69,13 +78,21 @@ function CasesList() {
       </div>
       <div className="relative mx-auto max-w-full">
 
-        <div className="mx-auto xl:mx-12 mt-12 grid max-w-lg gap-40 lg:max-w-none lg:grid-cols-2">
+      <Carousel
+          itemsToScroll={3}
+          itemsToShow={3}
+          breakPoints={breakPoints}
+          pagination={false}
+          itemPadding={[0, 2]}
+        >
+
           {posts.map((post, index) => (
-            <CaseCard index={index} data={post}/>
-            ))}
-        </div>
-      </div>
-    </div>
+            <CaseCard index={index} data={post} />
+          ))}
+    </Carousel>
+      </div >
+    </div >
   )
 }
+
 export default CasesList
