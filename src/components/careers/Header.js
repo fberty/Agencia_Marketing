@@ -5,7 +5,7 @@ export default function Header() {
               <div className="relative mx-auto lg:mx-12 max-w-full px-4 sm:static sm:px-6 lg:px-8">
                   <div className="sm:max-w-xl	">
                       <h1 className="font text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                          Careers at Murkiva
+                          Careers at FORK-DAO
                       </h1>
                       <p className="mt-12 text-2xl leading-10 text-gray-900">
                           Welcome to the Fireart job portal! Join us to become a part of one of the most great IT companies in your career. A team with a clear vision, strong work ethic, and a lot of passion to the work that we do every day.

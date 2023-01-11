@@ -5,6 +5,7 @@ import ServicesList from "components/services/ServicesList"
 import Layout from "hocs/layouts/Layout"
 import coding_img from "assets/img/services/coding.png"
 import { useEffect } from "react"
+import Helmet_Services from "components/services/Helmet"
 
 const posts_software = [
     {
@@ -131,6 +132,7 @@ function Services() {
         },[])
     return (
         <Layout>
+            <Helmet_Services />
             <Navbar/>
             <div className="pt-28">
                 <Header/>

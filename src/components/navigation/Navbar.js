@@ -33,9 +33,9 @@ const solutions = [
         href: '/blog',
         icon: IconThree,
     },  {
-        name: 'Contacto',
+        name: 'Contactos',
         description: 'Keep track of your growth',
-        href: '/contacto',
+        href: '/contactos',
         icon: IconThree,
     },
 ]
